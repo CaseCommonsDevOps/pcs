@@ -28,8 +28,8 @@ def constraint_cmd(argv):
         elif (sub_cmd2 == "show"):
             location_show(argv)
         elif len(argv) >= 2:
-            if argv[0] == "rule":
-                location_rule([sub_cmd2] + argv)
+            if sub_cmd2 == "rule":
+                location_rule(argv)
             else:
                 location_prefer([sub_cmd2] + argv)
         else:
